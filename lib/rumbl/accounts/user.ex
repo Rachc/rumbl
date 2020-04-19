@@ -21,7 +21,6 @@ defmodule Rumbl.Accounts.User do
     |> unique_constraint(:username)
   end
 
-  # Changeset novo para lidar com dados sensíveis
   def registration_changeset(user, params) do
     user
     |> changeset(params)
